@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _atoi - converts a string into an integer
+ * _atoi - converts a string to an integer
  * @s: string to be converted
  * 
  * Return: the integer converted from the string
@@ -19,13 +19,12 @@ int _atoi(char *s)
     }
 
     /* Check for sign */
-    if (s[i] == '-')
+    while (s[i] == '-' || s[i] == '+')
     {
-        sign = -1; /* Update sign to negative */
-        i++;
-    }
-    else if (s[i] == '+')
-    {
+        if (s[i] == '-')
+        {
+            sign *= -1; /* Toggle sign */
+        }
         i++;
     }
 
@@ -38,4 +37,3 @@ int _atoi(char *s)
 
     return sign * n;
 }
-
