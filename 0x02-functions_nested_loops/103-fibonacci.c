@@ -2,11 +2,11 @@
 
 int main(void)
 {
-    int first = 1, second = 2;
-    int next;
-    long long sum = 2; // Start with 2 because second is even and already added
+    long first = 1, second = 2;
+    long next;
+    long sum = 2; // Start with 2 because second is even and already added
 
-    // Generate Fibonacci sequence and sum even-valued terms
+    /* Generate Fibonacci sequence and sum even-valued terms */
     while (second <= 4000000)
     {
         next = first + second;
@@ -18,7 +18,7 @@ int main(void)
         second = next;
     }
 
-    printf("%lld\n", sum);
+    printf("%ld\n", sum);
 
     return 0;
 }
