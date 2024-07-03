@@ -7,14 +7,14 @@
  */
 int main(void)
 {
-    int count = 50;  // Number of Fibonacci numbers to print
-    int first = 1, second = 2;  // Initial Fibonacci sequence values
+    int count = 50;  /* Number of Fibonacci numbers to print */
+    int first = 1, second = 2;  /* Initial Fibonacci sequence values */
     int i;
 
-    // Print the first two Fibonacci numbers manually
+    /* Print the first two Fibonacci numbers manually */
     printf("%d, %d", first, second);
 
-    // Generate and print the rest of the Fibonacci numbers
+    /* Generate and print the rest of the Fibonacci numbers */
     for (i = 3; i <= count; i++)
     {
         int next = first + second;
