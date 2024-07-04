@@ -8,17 +8,17 @@
  */
 void puts2(char *str)
 {
-    int longi = 0;
-    int n;
+	int longi = 0;
+	int n;
 
-    /* Calculate the length of the string */
-    while (str[longi] != '\0')
-        longi++;
+	/* Calculate the length of the string */
+	while (str[longi] != '\0')
+		longi++;
 
-    /* Print every second character starting with the first one */
-    for (n = 0; n < longi; n += 2)
-        _putchar(str[n]);
+	/* Print every second character starting with the first one */
+	for (n = 0; n < longi; n += 2)
+		_putchar(str[n]);
 
-    _putchar('\n');
+	_putchar('\n');
 }
 
