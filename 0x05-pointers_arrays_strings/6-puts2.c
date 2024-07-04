@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * puts2 - prints every second character of a string starting with the first character
+ * puts2 - prints every second character of a string
  * @str: input string
  *
- * Description: Prints every second character of @str starting with the first character.
+ * Description: Prints every second character of @str
  */
 void puts2(char *str)
 {
