@@ -2,20 +2,17 @@
 #include <stdio.h>
 
 /**
- * main - Entry point of the program
+ * mul - Multiplies two integers
+ * @a: The first integer
+ * @b: The second integer
  *
- * Return: Always 0 (Success)
+ * Return: The result of multiplication
  */
-int main(void)
+int mul(int a, int b)
 {
     int result;
 
-    result = mul(3, 4);
-    printf("3 * 4 = %d\n", result);
-
-    result = mul(-2, 5);
-    printf("-2 * 5 = %d\n", result);
-
-    return (0);
+    result = a * b;
+    return (result);
 }
 
