@@ -8,18 +8,18 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-    int i = 0;
+	int i = 0;
 
-    /* Copy characters from src to dest until '\0' is encountered */
-    while (src[i] != '\0')
-    {
-        dest[i] = src[i];
-        i++;
-    }
+	/* Copy characters from src to dest until '\0' is encountered */
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
 
-    /* Append '\0' to the end of dest to terminate the string */
-    dest[i] = '\0';
+	/* Append '\0' to the end of dest to terminate the string */
+	dest[i] = '\0';
 
-    return dest;
+	return (dest);
 }
 
