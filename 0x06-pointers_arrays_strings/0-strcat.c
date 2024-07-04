@@ -5,12 +5,13 @@
  * _strcat - function that concatenates two strings
  * @dest: The destination string
  * @src: The source string
- * Return: A pointer to the resulting strind destination
+ * Return: A pointer to the resulting string destination
  */
 char *_strcat(char *dest, char *src)
 {
 	int i = 0;
 	int j;
+
 	while (dest[i] != '\0')
 	{
 		i++;
@@ -24,5 +25,5 @@ char *_strcat(char *dest, char *src)
 	}
 
 	dest[i] = '\0';
-	return(dest);
+	return (dest);
 }
