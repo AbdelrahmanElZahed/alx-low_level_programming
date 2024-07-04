@@ -3,7 +3,7 @@
 /**
  * _atoi - converts a string to an integer
  * @s: string to be converted
- * 
+ *
  * Return: the integer converted from the string
  */
 int _atoi(char *s)
@@ -19,12 +19,13 @@ int _atoi(char *s)
     }
 
     /* Check for sign */
-    while (s[i] == '-' || s[i] == '+')
+    if (s[i] == '-')
     {
-        if (s[i] == '-')
-        {
-            sign *= -1; /* Toggle sign */
-        }
+        sign = -1; /* Set sign to negative */
+        i++;
+    }
+    else if (s[i] == '+')
+    {
         i++;
     }
 
@@ -37,3 +38,4 @@ int _atoi(char *s)
 
     return sign * n;
 }
+
