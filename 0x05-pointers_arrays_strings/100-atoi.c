@@ -11,11 +11,12 @@ int _atoi(char *s)
 {
 	int i = 0;
 	int n = 0;
-	int sign = 1; /* Initialize sign to positive */
+	int sign = 1;
 	int digit_found = 0;
 
-	/* Skip whitespace and non-digit characters */
-	while (s[i] != '\0' && (s[i] < '0' || s[i] > '9') && s[i] != '-' && s[i] != '+')
+	/* Skip initial non-numeric characters */
+	while (s[i] != '\0' && (s[i] < '0' || s[i] > '9')
+		&& s[i] != '-' && s[i] != '+')
 	{
 		i++;
 	}
@@ -37,7 +38,7 @@ int _atoi(char *s)
 		if (n > (INT_MAX - (s[i] - '0')) / 10)
 		{
 			/* Handle overflow */
-			return (sign == 1) ? INT_MAX : INT_MIN;
+			return ((sign == 1) ? INT_MAX : INT_MIN);
 		}
 		n = n * 10 + (s[i] - '0');
 		digit_found = 1;
