@@ -21,7 +21,7 @@ int main(void)
         y = sum;
     }
 
-    printf("%ld\n", tsum);  // Output only the sum of even Fibonacci numbers
+    printf("%ld\n", tsum);
     return (0);
 }
 
