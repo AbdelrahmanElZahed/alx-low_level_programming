@@ -8,7 +8,7 @@
 int main(void)
 {
     unsigned long int i, j = 1, k = 2;
-    unsigned long int j1, j2, k1, k2;
+    unsigned long int k1, k2;
 
     printf("%lu", j); /* Print the first Fibonacci number */
 
@@ -28,8 +28,6 @@ int main(void)
 
         k1 = k / 1000000000;
         k2 = k % 1000000000;
-        j1 = j / 1000000000;
-        j2 = j % 1000000000;
 
         if (k1 != 0)
             printf("%lu%09lu", k1, k2);
