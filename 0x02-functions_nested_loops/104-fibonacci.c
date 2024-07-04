@@ -10,9 +10,9 @@ int main(void)
     unsigned long int i, j = 1, k = 2;
     unsigned long int k1, k2;
 
-    printf("%lu", j); /* Print the first Fibonacci number */
+    printf("%lu", j); // Print the first Fibonacci number
 
-    for (i = 1; i <= 91; i++) /* Loop for the first 91 Fibonacci numbers */
+    for (i = 1; i <= 91; i++) // Loop for the first 91 Fibonacci numbers
     {
         printf(", %lu", k);
 
