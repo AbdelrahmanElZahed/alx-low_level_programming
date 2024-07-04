@@ -4,7 +4,6 @@
  *
  * Return: (0)
  */
-
 int main(void)
 {
 	long int i, x = 1, y = 2, sum = 0, tsum = 0;
@@ -15,10 +14,10 @@ int main(void)
 		{
 			tsum = tsum + y;
 		}
-		sum = x;
+		sum = x+y;
 		x = y;
 		y = sum;
 	}
-	return 0;
+	return (0);
 }
 
