@@ -1,25 +1,24 @@
 #include <stdio.h>
+/**
+ * main - sum up even fibonacci up to 4 million
+ *
+ * Return: (0)
+ */
 
 int main(void)
 {
-	int first = 1, second = 2;
-	int next;
-	int sum = 2; /* Start with 2 because second is even and already added */
+	long int i, x = 1, y = 2, sum = 0, tsum = 0;
 
-	/* Generate Fibonacci sequence and sum even-valued terms */
-	while (second <= 4000000)
+	for (i = 0; i < 49, i++)
 	{
-		next = first + second;
-		if (next % 2 == 0)
+		if ((y % 2 == 0) && (y <= 4000000))
 		{
-			sum += next;
+			tsum = tsum + y;
 		}
-		first = second;
-		second = next;
+		sum = x;
+		x = y;
+		y = sum;
 	}
-
-	printf("%d\n", sum);
-
 	return 0;
 }
 
