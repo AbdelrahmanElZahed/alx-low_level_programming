@@ -1,23 +1,26 @@
 #include <stdio.h>
 
 /**
- * main - Computes the sum of multiples of 3 or 5 below 1024
+ * main - Prints the first 50 Fibonacci numbers, starting with 1 and 2
  *
  * Return: Always 0
  */
 int main(void)
 {
-    int i, sum = 0;
+	int i;
+	unsigned long int a = 1, b = 2, next;
 
-    for (i = 0; i < 1024; i++)
-    {
-        if ((i % 3 == 0) || (i % 5 == 0))
-        {
-            sum += i;
-        }
-    }
+	printf("%lu, %lu", a, b);
 
-    printf("%d\n", sum);
-    return 0;
+	for (i = 2; i < 50; i++)
+	{
+		next = a + b;
+		printf(", %lu", next);
+		a = b;
+		b = next;
+	}
+
+	printf("\n");
+	return (0);
 }
 
