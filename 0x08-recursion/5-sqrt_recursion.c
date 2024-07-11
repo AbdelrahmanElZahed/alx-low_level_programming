@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _pow_recursion - returns the value of x raised to the power of y
+ * _sqrt_helper - returns the value of x raised to the power of y
  * @n: the number to find the square root of
  * @i: the current guess for the square root
  * Return: the natural square root,
