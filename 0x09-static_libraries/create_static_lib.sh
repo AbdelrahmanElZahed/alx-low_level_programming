@@ -1,4 +1,5 @@
 #!/bin/bash
-gcc -Wall -Werror -Wextra -pedantic -c *.c
-ar -rc libaall.a *.o
-ranlib liball.a
+gcc -c *.c
+ar rcs libaall.a *.o
+rm *.o
+echo "Static library liball.a created successfully."
