@@ -41,7 +41,7 @@ char *argstostr(int ac, char **av)
 			index++;
 			j++;
 		}
-		if (i < ac - 1) /* Add newline character except for the last character */
+		if (i < ac) /* Add newline character */
 		{
 			result[index] = '\n';
 			index++;
