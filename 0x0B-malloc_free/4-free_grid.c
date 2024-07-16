@@ -10,13 +10,15 @@
  */
 void free_grid(int **grid, int height)
 {
+	int i;
+
 	if (grid == NULL || height <= 0)
-		return ();
-	/* Free memory allocated for each row */
-	for (int i = 0; i < height; i++)
+		return; /* Check for valid input */
+	/* Free each row of the grid */
+	for (i = 0; i < height; i++)
 	{
 		free(grid[i]);
 	}
-	/* Free memory allocated for the grid itself */
+	/* Free the grid itself */
 	free(grid);
 }
