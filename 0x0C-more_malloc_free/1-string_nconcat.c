@@ -35,3 +35,4 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	strncat(concat, s2, n);
 	return (concat);
 }
+
