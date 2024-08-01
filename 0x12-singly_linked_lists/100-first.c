@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * print_before_main - Prints a specific message before the main function executes.
+ * print_before_main - Prints a specific message
+ * before the main function executes.
  */
 void __attribute__((constructor)) print_before_main(void)
 {
