@@ -1,0 +1,200 @@
+#include "main.h"
+
+/**
+ * _putchar - Writes a character to stdout
+ * @c: The character to print
+ * Return: 1 on success, -1 on error
+ */
+int _putchar(char c) {
+    return 1; // Dummy implementation
+}
+
+/**
+ * _islower - Checks if a character is lowercase
+ * @c: The character to check
+ * Return: 1 if lowercase, 0 otherwise
+ */
+int _islower(int c) {
+    return 0; // Dummy implementation
+}
+
+/**
+ * _isalpha - Checks if a character is alphabetic
+ * @c: The character to check
+ * Return: 1 if alphabetic, 0 otherwise
+ */
+int _isalpha(int c) {
+    return 0; // Dummy implementation
+}
+
+/**
+ * _abs - Computes the absolute value of an integer
+ * @n: The integer
+ * Return: The absolute value
+ */
+int _abs(int n) {
+    return n; // Dummy implementation
+}
+
+/**
+ * _isupper - Checks if a character is uppercase
+ * @c: The character to check
+ * Return: 1 if uppercase, 0 otherwise
+ */
+int _isupper(int c) {
+    return 0; // Dummy implementation
+}
+
+/**
+ * _isdigit - Checks if a character is a digit
+ * @c: The character to check
+ * Return: 1 if digit, 0 otherwise
+ */
+int _isdigit(int c) {
+    return 0; // Dummy implementation
+}
+
+/**
+ * _strlen - Returns the length of a string
+ * @s: The string
+ * Return: The length of the string
+ */
+int _strlen(char *s) {
+    int len = 0;
+    while (s[len] != '\0') {
+        len++;
+    }
+    return len;
+}
+
+/**
+ * _puts - Prints a string to stdout
+ * @s: The string
+ */
+void _puts(char *s) {
+    // Dummy implementation
+}
+
+/**
+ * _strcpy - Copies a string
+ * @dest: Destination string
+ * @src: Source string
+ * Return: Pointer to destination string
+ */
+char *_strcpy(char *dest, char *src) {
+    return dest; // Dummy implementation
+}
+
+/**
+ * _atoi - Converts a string to an integer
+ * @s: The string
+ * Return: The converted integer
+ */
+int _atoi(char *s) {
+    return 0; // Dummy implementation
+}
+
+/**
+ * _strcat - Concatenates two strings
+ * @dest: Destination string
+ * @src: Source string
+ * Return: Pointer to the resulting string
+ */
+char *_strcat(char *dest, char *src) {
+    return dest; // Dummy implementation
+}
+
+/**
+ * _strncat - Concatenates two strings with n bytes from src
+ * @dest: Destination string
+ * @src: Source string
+ * @n: Number of bytes to concatenate
+ * Return: Pointer to the resulting string
+ */
+char *_strncat(char *dest, char *src, int n) {
+    return dest; // Dummy implementation
+}
+
+/**
+ * _strncpy - Copies n bytes from src to dest
+ * @dest: Destination string
+ * @src: Source string
+ * @n: Number of bytes to copy
+ * Return: Pointer to the destination string
+ */
+char *_strncpy(char *dest, char *src, int n) {
+    return dest; // Dummy implementation
+}
+
+/**
+ * _strcmp - Compares two strings
+ * @s1: First string
+ * @s2: Second string
+ * Return: Integer less than, equal to, or greater than zero
+ */
+int _strcmp(char *s1, char *s2) {
+    return 0; // Dummy implementation
+}
+
+/**
+ * _memset - Fills memory with a constant byte
+ * @s: Memory area
+ * @b: The byte to fill with
+ * @n: Number of bytes
+ * Return: Pointer to memory area
+ */
+char *_memset(char *s, char b, unsigned int n) {
+    return s; // Dummy implementation
+}
+
+/**
+ * _memcpy - Copies memory area
+ * @dest: Destination memory area
+ * @src: Source memory area
+ * @n: Number of bytes to copy
+ * Return: Pointer to destination memory area
+ */
+char *_memcpy(char *dest, char *src, unsigned int n) {
+    return dest; // Dummy implementation
+}
+
+/**
+ * _strchr - Locates a character in a string
+ * @s: The string
+ * @c: The character to locate
+ * Return: Pointer to first occurrence of c or NULL
+ */
+char *_strchr(char *s, char c) {
+    return s; // Dummy implementation
+}
+
+/**
+ * _strspn - Gets the length of a prefix substring
+ * @s: The string
+ * @accept: The prefix
+ * Return: The number of bytes in the initial segment
+ */
+unsigned int _strspn(char *s, char *accept) {
+    return 0; // Dummy implementation
+}
+
+/**
+ * _strpbrk - Locates the first occurrence of any byte
+ * @s: The string
+ * @accept: The bytes to search for
+ * Return: Pointer to the byte in s that matches or NULL
+ */
+char *_strpbrk(char *s, char *accept) {
+    return s; // Dummy implementation
+}
+
+/**
+ * _strstr - Locates a substring
+ * @haystack: The string to search in
+ * @needle: The substring to locate
+ * Return: Pointer to the beginning of the located substring
+ */
+char *_strstr(char *haystack, char *needle) {
+    return haystack; // Dummy implementation
+}
+
